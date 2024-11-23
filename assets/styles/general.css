@@ -1,0 +1,1306 @@
+:root {
+  /* нямам carolina шрифт */
+  /* font-family: 'Playfair Display', serif; */
+  --yellow: #ffc167;
+  --beige: #eed2a9;
+}
+body {
+  font-family: "Playfair Display", serif;
+}
+/* navigation */
+
+header .main-nav {
+  padding-left: 22%;
+  background-color: black;
+  /* 103px по дизайн */
+  height: 103px;
+}
+header .main-nav ul li a.nav-link {
+  margin-top: 40px;
+  margin-right: 30px;
+  color: white;
+  transition: 0.4s;
+  position: relative;
+}
+header .main-nav ul li a.nav-link:after {
+  content: "";
+  width: 0%;
+  height: 1px;
+  background-color: var(--yellow);
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  border-radius: 5px;
+  transition: 0.4s;
+}
+header .main-nav ul li a.nav-link:hover:after {
+  width: 100%;
+  left: 0;
+  right: 0;
+}
+header .main-nav ul li a.nav-link:hover {
+  color: #ffc167;
+}
+/*  collapse menu */
+header .main-nav .navbar-collapse.collapse.show {
+  background-color: black;
+  width: 129%;
+  position: absolute;
+  transition: opacity 0.3s ease;
+  right: 0px;
+  top: 103px;
+  text-align: center;
+}
+/* change urself part of header */
+.changeUrself {
+  height: 550px;
+  background: url("../img/lashes.png") no-repeat center center;
+  background-size: cover;
+}
+.changeUrself_info {
+  position: absolute;
+  top: 472px;
+  left: 60%;
+  width: 786px;
+  height: 128px;
+  background: #1d1d1d;
+  border: 1px solid #707070;
+  opacity: 0.8;
+}
+.changeUrself_info h3 {
+  color: var(--yellow);
+  font-family: cursive;
+  font-style: italic;
+  font-size: 44px;
+  margin-top: 10px;
+  margin-left: 20px;
+}
+.changeUrself_info h4 {
+  color: white;
+  font-size: 20px;
+  margin-left: 30px;
+  font-weight: bold;
+}
+/*for me section */
+#forMe {
+  height: 496px;
+  background: url("../img/wave1.png") no-repeat center center;
+  background-size: cover;
+}
+#forMe img {
+  height: 535px;
+  width: 450px;
+  margin-top: -200px;
+}
+#forMe .forMe_info h3 {
+  font-size: 32px;
+  background-color: var(--beige);
+  width: 170px;
+  height: 61px;
+  margin-top: 47px;
+  text-align: center;
+  margin-left: 80%;
+  font-weight: bold;
+  padding-top: 13px;
+}
+#forMe .forMe_info p {
+  font-weight: bold;
+  font-size: 20px;
+  text-align: right;
+}
+#forMe .forMe_info h4 {
+  font-weight: bold;
+  font-size: 24px;
+  text-align: right;
+}
+#forMe .forMe_info h5 {
+  display: none;
+  font-weight: bold;
+  font-size: 16px;
+  text-align: center;
+}
+/* effect section */
+#effect {
+  position: relative;
+}
+#effect img {
+  margin-left: 80px;
+}
+#effect .effect_dots {
+  position: absolute;
+  /* left: 620px;
+  top: 1243px; */
+  left: 32%;
+  top: 57%;
+}
+#effect .effect_dots .effect_dot,
+#effect .mobile .effect_dotsMobile .effect_dot {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background-color: var(--yellow);
+  margin: 10px;
+  display: inline-block;
+}
+#effect .effect_button {
+  position: absolute;
+  /* top: 1218px;
+  left: 753px; */
+  top: 50%;
+  left: 40%;
+  width: 176px;
+  height: 69px;
+  background-color: #ffc167;
+  font-size: 32px;
+  padding: 10px 40px;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+#effect .effect_dotsAfter {
+  position: absolute;
+  /* right: 509px;
+  top: 1243px; */
+  right: 27%;
+  top: 57%;
+}
+#effect .effect_dotsAfter .effect_dot {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background-color: var(--yellow);
+  margin: 10px;
+  display: inline-block;
+}
+#effect .effect_buttonAfter {
+  position: absolute;
+  /* top: 1218px;
+  left: 1428px; */
+  top: 50%;
+  right: 17%;
+  width: 176px;
+  height: 69px;
+  background-color: #ffc167;
+  font-size: 32px;
+  padding: 10px 40px;
+  font-weight: bold;
+  text-align: center;
+  text-transform: uppercase;
+}
+/* mobile version of effect section */
+#effect .mobile {
+  margin-top: 120px;
+}
+
+#effect .mobile .effect_buttonAfterMobile,
+#effect .mobile .effect_buttonMobile {
+  width: 126px;
+  height: 49px;
+  margin-left: 35%;
+  margin-bottom: 20px;
+  background-color: #ffc167;
+  font-size: 20px;
+  padding: 10px 20px;
+  font-weight: bold;
+  text-align: center;
+  text-transform: uppercase;
+}
+#effect .mobile .effect_dotsMobile {
+  margin-left: 30%;
+  margin-top: 50%;
+}
+/* salon section */
+#salon {
+  height: 500px;
+  background: url("../img/wave2.png") no-repeat center center;
+  background-size: cover;
+  padding-top: 100px;
+}
+#salon .salon_info h3 {
+  background-color: #453c37;
+  width: 217px;
+  height: 61px;
+  font-weight: bold;
+  color: var(--yellow);
+  padding: 10px 20px;
+  text-align: center;
+  margin-bottom: 20px;
+  margin-left: -35px;
+}
+#salon .salon_info p {
+  font-size: 20px;
+  font-weight: bold;
+}
+#salon .col-lg-6 img {
+  width: 600px;
+  height: 450px;
+  margin-top: -70px;
+}
+/* mobile salon section */
+#salon .mobile h4 {
+  background-color: #453c37;
+  margin-left: 35%;
+  width: 217px;
+  height: 61px;
+  font-weight: bold;
+  color: var(--yellow);
+  padding: 10px 20px;
+  text-align: center;
+  margin-bottom: 20px;
+  font-size: 24px;
+}
+#salon .mobile img {
+  width: 390px;
+  height: 320px;
+  margin-left: 23%;
+}
+#salon .mobile p {
+  font-weight: bold;
+  font-size: 16px;
+  margin: 30px 60px;
+  text-align: center;
+}
+/* service section */
+#services {
+  height: 610px;
+  padding-top: 50px;
+  background: url("../img/wave3.png") no-repeat center center;
+  background-size: cover;
+}
+#services h3.services_heading,
+#reviews h3.reviews_heading {
+  text-align: center;
+  font-weight: bold;
+  font-size: 32px;
+  width: 700px;
+  height: 61px;
+  background-color: var(--beige);
+  margin-left: 20%;
+  padding: 10px;
+  margin-bottom: 35px;
+}
+#services .col-4 {
+  text-align: center;
+}
+#services img {
+  transition: 0.3s;
+}
+#services img:hover {
+  transform: scale(0.9);
+}
+#services .services_info h4 {
+  font-size: 24px;
+  font-weight: bold;
+}
+#services .services_info p {
+  font-size: 16px;
+  font-weight: bold;
+  width: 176px;
+  height: 69px;
+  background-color: var(--yellow);
+  margin-left: 120px;
+  padding-top: 10px;
+}
+/* services mobile slider */
+.carousel-indicators {
+  top: 400px;
+}
+.carousel-indicators [data-bs-target],
+.carousel-indicators2 [data-bs-target],
+.carousel-indicators3 [data-bs-target] {
+  background-color: var(--beige);
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  border: none;
+}
+.carousel-indicators button.active {
+  background-color: var(--yellow);
+}
+
+#services .servicesSlider_info h4 {
+  font-size: 24px;
+  font-weight: bold;
+  text-align: center;
+}
+#services .servicesSlider_info p {
+  font-size: 16px;
+  font-weight: bold;
+  width: 176px;
+  height: 69px;
+  background-color: var(--yellow);
+  padding: 10px;
+  text-align: center;
+  margin-left: 42%;
+}
+/* gallery section */
+#gallery {
+  height: 1000px;
+  position: relative;
+}
+#gallery .leaf1,
+.leaf2 {
+  position: absolute;
+}
+#gallery .leaf1 img,
+#gallery .leaf2 img {
+  width: 100%;
+}
+#gallery .leaf1 {
+  top: 10%;
+  left: 5%;
+  width: 300px;
+  height: 286px;
+}
+#gallery .leaf2 {
+  top: 25%;
+  right: 5%;
+  width: 300px;
+  height: 286px;
+}
+.gallery-container {
+  max-width: 900px;
+}
+.gallery-container img {
+  border-radius: 2px;
+  transition: 0.3s;
+}
+.gallery-container img:hover {
+  transform: scale(1.1);
+}
+#gallery h3.gallery_heading,
+#contactsOne h3.contact_heading {
+  font-weight: bold;
+  text-align: center;
+  font-size: 32px;
+  width: 700px;
+  height: 61px;
+  margin-left: 20%;
+  margin-top: 20px;
+  padding: 10px;
+  margin-bottom: 35px;
+  background-color: #453b36;
+  color: var(--yellow);
+}
+.gallery-row {
+  display: flex;
+  align-items: stretch;
+}
+/* gallery mobile */
+.carousel-indicators2 {
+  top: 620px;
+  left: 45%;
+  position: absolute;
+}
+
+.carousel-indicators2 button.active {
+  background-color: var(--yellow);
+}
+#gallery .carousel-item {
+  width: 400px;
+  height: 600px;
+  margin-left: 33%;
+  transition: 0.6s ease-in-out;
+}
+#gallery .carousel-item img {
+  width: 80%;
+  margin-bottom: 10px;
+  margin-right: 10px;
+}
+/* reviews section */
+#reviews {
+  height: 800px;
+}
+#reviews .carousel-item {
+  opacity: 0.9;
+  transition: 0.6s ease-in-out;
+  overflow: hidden;
+}
+#reviews .carousel-item .reviewsImages {
+  margin-right: 7%;
+  margin-bottom: -70px;
+  text-align: center;
+  position: relative;
+  z-index: 1;
+}
+#reviews .carousel-item .reviewsImages img.decoration {
+  position: absolute;
+  bottom: 0px;
+  left: 40%;
+  /* z-index: 0; */
+}
+#reviews .reviewsInfo {
+  width: 980px;
+  height: 411px;
+  background-color: var(--beige);
+  box-shadow: 0px 3px 6px #00000029;
+  margin-left: 10%;
+  opacity: 0.9;
+  padding: 100px 120px;
+  position: relative;
+}
+#reviews .reviewsInfo h3 {
+  text-align: center;
+  font-size: 24px;
+  position: relative;
+}
+#reviews .reviewsInfo h3:after {
+  content: "";
+  position: absolute;
+  bottom: -10px;
+  left: 37%;
+  width: 25%;
+  height: 5px;
+  background-color: var(--yellow);
+}
+#reviews .reviewsInfo p {
+  text-align: center;
+  font-weight: bold;
+  text-align: center;
+}
+#reviews .reviewsInfo .quotesDown {
+  position: absolute;
+  right: 7%;
+}
+.carousel-indicators3 {
+  top: 600px;
+  left: 45%;
+  position: absolute;
+}
+/* contacts section */
+#contactsOne a i {
+  font-size: 21px;
+  margin-right: 12px;
+  text-align: left;
+  margin-left: 30%;
+  transition: 0.3s;
+  cursor: pointer;
+}
+#contacts {
+  background: url("../img/wave2.png") no-repeat center;
+  background-size: cover;
+  height: 800px;
+}
+#contactsOne a i:hover {
+  transform: scale(1.1);
+}
+#contactsOne a {
+  text-decoration: none;
+  color: #1d1d1d;
+  text-align: left;
+  transition: 0.3s;
+  font-size: 20px;
+}
+#contactsOne a:hover {
+  color: var(--yellow);
+}
+#contactsTwo {
+  margin-top: 50px;
+}
+#contactsTwo .contact_form {
+  background: url("../img/form.png") no-repeat center;
+  background-size: cover;
+  padding: 50px;
+}
+#contactsTwo .contact_form h3 {
+  color: white;
+  margin-bottom: 30px;
+}
+#contactsTwo form input {
+  border: none;
+}
+#contactsTwo form input::placeholder {
+  color: var(--yellow);
+}
+#contactsTwo form button {
+  text-transform: uppercase;
+  color: #1d1d1d;
+  background-color: var(--yellow);
+  width: 118px;
+  height: 35px;
+  font-size: 18px;
+  border: 1px solid transparent;
+  border-radius: 2px;
+  margin-top: 15px;
+  transition: 0.3s;
+  font-weight: bold;
+}
+#contactsTwo form button:hover {
+  border: 1px solid var(--yellow);
+  background-color: transparent;
+  color: var(--yellow);
+}
+
+/* .carousel-indicators3 button.active {
+  background-color: var(--yellow);
+} */
+#contactsTwo iframe {
+  width: 100%;
+  height: 468px;
+  border: 0;
+  margin-left: -5%;
+}
+/* footer section */
+footer {
+  text-align: center;
+  width: 100%;
+  height: 130px;
+  background-color: black;
+  padding-top: 30px;
+}
+/* extra extra small iphone 12Pro */
+@media only screen and (max-width: 390px) {
+  .changeUrself_info {
+    top: 70%;
+    left: 40px;
+    width: 100%;
+    height: 95px;
+  }
+
+  header .main-nav a img {
+    display: none;
+  }
+  .changeUrself_info h3 {
+    font-size: 26px;
+  }
+  .changeUrself_info h4 {
+    font-size: 16px;
+  }
+  #forMe {
+    height: 680px;
+  }
+  #forMe img {
+    display: block;
+    margin: 30px auto;
+    height: 360px;
+    width: 280px;
+  }
+  #forMe .forMe_info {
+    padding: 0 60px;
+  }
+  #forMe .forMe_info h3 {
+    margin: 0 auto;
+    font-size: 24px;
+    margin-bottom: 20px;
+  }
+  #forMe .forMe_info p {
+    text-align: center;
+    font-size: 12px;
+  }
+  #forMe .forMe_info h5 {
+    display: block;
+  }
+  #forMe .forMe_info h4 {
+    display: none;
+  }
+
+  #effect .mobile img {
+    width: 98px;
+  }
+
+  #effect .mobile .effect_buttonMobile,
+  #effect .mobile .effect_buttonAfterMobile {
+    width: 100px;
+    height: 32px;
+    font-size: 13px;
+    padding: 5px 10px;
+    margin-left: 77px;
+  }
+
+  #effect .mobile {
+    margin-right: 140px;
+  }
+  #effect .mobile .effect_dotsMobile {
+    display: none;
+  }
+  #salon {
+    height: 750px;
+  }
+  #salon .mobile h4 {
+    margin-left: 18%;
+  }
+  #salon .mobile img {
+    margin-left: -4%;
+  }
+  #salon .mobile p {
+    font-size: 13px;
+  }
+  #services {
+    height: 700px;
+  }
+
+  #services h3.services_heading {
+    margin-left: 22%;
+    width: 217px;
+    height: 61px;
+    font-size: 24px;
+    font-weight: bold;
+  }
+  #services .servicesSlider_info p {
+    margin-left: 27%;
+  }
+
+  #gallery h3.gallery_heading,
+  #contactsOne h3.contact_heading {
+    margin-left: 22%;
+    width: 217px;
+    height: 61px;
+    font-size: 24px;
+    font-weight: bold;
+  }
+  #gallery .carousel-item {
+    margin-left: 25%;
+    width: 250px;
+    height: 600px;
+  }
+  #reviews h3.reviews_heading {
+    margin-left: 22%;
+    width: 217px;
+    height: 61px;
+    font-size: 22px;
+    font-weight: bold;
+    padding: 5px;
+  }
+  #reviews .container {
+    max-width: 100%;
+  }
+  #reviews .carousel-item .reviewsImages {
+    margin-right: 2%;
+  }
+  #reviews .carousel-item .reviewsImages img.decoration {
+    left: 16%;
+  }
+  #reviews .reviewsInfo {
+    margin-left: 0%;
+    width: 100%;
+    padding: 125px 30px;
+  }
+  #reviews .reviewsInfo h3 {
+    font-size: 24px;
+  }
+  #reviews .reviewsInfo p {
+    font-size: 12px;
+    font-weight: 300;
+  }
+  #reviews .reviewsInfo img {
+    display: none;
+  }
+  .carousel-indicators3 {
+    left: 38%;
+  }
+  #contactsOne .col-12 {
+    text-align: center;
+  }
+  #contactOne a {
+    text-align: center;
+  }
+  #contactsOne a i {
+    text-align: center;
+    margin-left: 0%;
+  }
+  #contacts {
+    height: 1000px;
+  }
+  #contactsTwo .contact_form {
+    width: 140%;
+    margin-left: -20%;
+    padding: 30px 100px;
+  }
+  #contactsTwo .contact_form button {
+    font-size: 18px;
+    margin-left: 30%;
+  }
+  #contactsTwo iframe {
+    height: 253px;
+    width: 143%;
+    margin-left: -23%;
+  }
+}
+/* Extra Small (xs): up to 576px */
+@media only screen and (min-width: 391px) and (max-width: 576px) {
+  header .main-nav a img {
+    display: none;
+  }
+  .changeUrself_info {
+    top: 60%;
+    left: 40px;
+    width: 100%;
+    height: 125px;
+  }
+  #forMe {
+    height: 680px;
+  }
+  #forMe img {
+    display: block;
+    margin: 30px auto;
+    height: 360px;
+    width: 280px;
+  }
+  #forMe .forMe_info {
+    padding: 0 60px;
+  }
+  #forMe .forMe_info h3 {
+    margin: 0 auto;
+    font-size: 24px;
+    margin-bottom: 20px;
+  }
+  #forMe .forMe_info p {
+    text-align: center;
+    font-size: 12px;
+  }
+  #forMe .forMe_info h5 {
+    display: block;
+  }
+  #forMe .forMe_info h4 {
+    display: none;
+  }
+
+  #effect .mobile img {
+    width: 98px;
+  }
+  #effect .mobile .effect_dotsMobile {
+    margin-left: 0%;
+    margin-top: 122%;
+  }
+  #effect .mobile .effect_dotsMobile .effect_dot {
+    width: 12px;
+    height: 12px;
+    margin-right: 0px;
+  }
+  #effect .mobile .effect_buttonMobile,
+  #effect .mobile .effect_buttonAfterMobile {
+    width: 96px;
+    height: 38px;
+    font-size: 13px;
+  }
+  #salon {
+    height: 750px;
+  }
+  #salon .mobile img {
+    margin-left: 19%;
+  }
+  #services {
+    height: 700px;
+  }
+  #services h3.services_heading {
+    margin-left: 30%;
+    width: 217px;
+    height: 61px;
+    font-size: 24px;
+    font-weight: bold;
+  }
+  #services .servicesSlider_info p {
+    margin-left: 33%;
+  }
+  #gallery h3.gallery_heading,
+  #contactsOne h3.contact_heading {
+    margin-left: 30%;
+    width: 217px;
+    height: 61px;
+    font-size: 24px;
+    font-weight: bold;
+  }
+  #gallery .carousel-item {
+    margin-left: 32%;
+    width: 250px;
+    height: 600px;
+  }
+  #reviews h3.reviews_heading {
+    margin-left: 30%;
+    width: 217px;
+    height: 61px;
+    font-size: 22px;
+    font-weight: bold;
+    padding: 5px;
+  }
+  #reviews .container {
+    max-width: 100%;
+  }
+  #reviews .carousel-item .reviewsImages {
+    margin-right: 2%;
+  }
+  #reviews .carousel-item .reviewsImages img.decoration {
+    left: 30%;
+  }
+  #reviews .reviewsInfo {
+    margin-left: 0%;
+    width: 100%;
+  }
+  #reviews .reviewsInfo h3 {
+    font-size: 24px;
+  }
+  #reviews .reviewsInfo p {
+    font-size: 12px;
+  }
+  #reviews .reviewsInfo img {
+    width: 30px;
+    margin-bottom: 10px;
+  }
+  #contactsOne .col-12 {
+    text-align: center;
+  }
+  #contactOne a {
+    text-align: center;
+  }
+  #contactsOne a i {
+    text-align: center;
+    margin-left: 0%;
+  }
+  #contacts {
+    height: 1200px;
+  }
+  #contactsTwo .contact_form {
+    width: 140%;
+    margin-left: -20%;
+    padding: 50px 150px;
+  }
+  #contactsTwo .contact_form button {
+    font-size: 18px;
+    margin-left: 30%;
+  }
+  #contactsTwo iframe {
+    height: 453px;
+    width: 143%;
+    margin-left: -23%;
+  }
+}
+
+/* Small (sm): 576px to 767px */
+@media only screen and (min-width: 577px) and (max-width: 767px) {
+  .changeUrself_info {
+    top: 55%;
+    left: 40px;
+    width: 100%;
+    height: 125px;
+  }
+  #forMe {
+    height: 680px;
+  }
+  #forMe img {
+    display: block;
+    margin: 30px auto;
+    height: 360px;
+    width: 280px;
+  }
+  #forMe .forMe_info {
+    padding: 0 60px;
+  }
+  #forMe .forMe_info h3 {
+    margin: 0 auto;
+    font-size: 24px;
+    margin-bottom: 20px;
+  }
+  #forMe .forMe_info p {
+    text-align: center;
+    font-size: 12px;
+  }
+  #forMe .forMe_info h5 {
+    display: block;
+  }
+  #forMe .forMe_info h4 {
+    display: none;
+  }
+  #effect .mobile img {
+    width: 110px;
+  }
+  #effect .mobile .effect_dotsMobile {
+    margin-left: 0%;
+    margin-top: 122%;
+  }
+  #effect .mobile .effect_dotsMobile .effect_dot {
+    width: 10px;
+    height: 10px;
+    margin-right: 0px;
+  }
+  #effect .mobile .effect_buttonMobile,
+  #effect .mobile .effect_buttonAfterMobile {
+    width: 100px;
+    height: 40px;
+    font-size: 16px;
+  }
+  #salon {
+    height: 750px;
+  }
+  #salon .mobile img {
+    margin-left: 19%;
+  }
+  #services {
+    height: 700px;
+  }
+  #services h3.services_heading {
+    margin-left: 30%;
+    width: 217px;
+    height: 61px;
+    font-size: 24px;
+    font-weight: bold;
+  }
+  #services .servicesSlider_info p {
+    margin-left: 33%;
+  }
+  #gallery h3.gallery_heading,
+  #contactsOne h3.contact_heading {
+    margin-left: 30%;
+    width: 217px;
+    height: 61px;
+    font-size: 24px;
+    font-weight: bold;
+  }
+  #reviews h3.reviews_heading {
+    margin-left: 35%;
+    width: 217px;
+    height: 61px;
+    font-size: 22px;
+    font-weight: bold;
+    padding: 5px;
+  }
+  #reviews .container {
+    max-width: 100%;
+  }
+  #reviews .carousel-item .reviewsImages {
+    margin-right: 2%;
+  }
+  #reviews .carousel-item .reviewsImages img.decoration {
+    left: 30%;
+  }
+  #reviews .reviewsInfo {
+    margin-left: 0%;
+    width: 100%;
+  }
+  #reviews .reviewsInfo h3 {
+    font-size: 24px;
+  }
+  #reviews .reviewsInfo p {
+    font-size: 12px;
+  }
+  #reviews .reviewsInfo img {
+    width: 50px;
+    margin-bottom: 10px;
+  }
+  #contactsOne .col-12 {
+    text-align: center;
+  }
+  #contactOne a {
+    text-align: center;
+  }
+  #contactsOne a i {
+    text-align: center;
+    margin-left: 0%;
+  }
+  #contacts {
+    height: 1200px;
+  }
+  #contactsTwo .contact_form {
+    width: 147%;
+    margin-left: -23%;
+    padding: 100px;
+  }
+  #contactsTwo iframe {
+    height: 375px;
+    width: 147%;
+    margin-left: -23%;
+  }
+  /* map */
+  .map {
+    position: relative;
+  }
+
+  .map-container {
+    overflow: hidden;
+    padding-bottom: 56.25%;
+    position: relative;
+    height: 0;
+  }
+
+  .map-container iframe {
+    left: 0;
+    top: 0;
+    height: 50%;
+    width: 100%;
+    position: absolute;
+  }
+
+  .map-info-box {
+    background-color: rgba(0, 0, 0, 1);
+    box-shadow: 0px 3px 6px #00000029;
+    position: absolute;
+    top: 82px;
+    right: 40px;
+    color: var(--white);
+    text-align: right;
+    padding: 20px 25px 10px 25px;
+  }
+
+  .map-info-box ul li {
+    list-style: none;
+    font-size: 16px;
+    color: #cdc2b3;
+    margin-bottom: 8px;
+  }
+
+  .map-info-box ul li span {
+    margin-right: 15px;
+    /* color: #CDC2B3; */
+  }
+
+  .map-info-box ul li span a {
+    margin-right: 15px;
+    color: #cdc2b3;
+  }
+
+  .map-info-box ul li i {
+    color: var(--gold);
+    font-size: 19px;
+  }
+
+  .map-info-box-mobile {
+    display: none;
+  }
+
+  #map {
+    width: 100%;
+    height: 400px;
+    background-color: grey;
+  }
+}
+/* Medium (md): 768px to 991px */
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  header .main-nav {
+    height: 200px;
+  }
+  .changeUrself_info {
+    top: 600px;
+    left: 50%;
+  }
+  .changeUrself_info h3 {
+    font-size: 34px;
+  }
+  .changeUrself_info h4 {
+    font-size: 14px;
+  }
+  #forMe {
+    height: 550px;
+  }
+  #forMe img {
+    display: block;
+    margin: -30px auto;
+    height: 410px;
+    width: 330px;
+  }
+  #forMe .forMe_info {
+    padding: 0 60px;
+  }
+  #forMe .forMe_info h3 {
+    margin: 0 auto;
+    font-size: 24px;
+    margin-bottom: 20px;
+    margin-top: 50px;
+  }
+  #forMe .forMe_info p {
+    text-align: center;
+    font-size: 12px;
+  }
+  #forMe .forMe_info h5 {
+    display: block;
+  }
+  #forMe .forMe_info h4 {
+    display: none;
+  }
+  #salon {
+    height: 700px;
+  }
+  #services {
+    height: 700px;
+  }
+  #services h3.services_heading {
+    margin-left: 35%;
+    width: 217px;
+    height: 61px;
+    font-size: 24px;
+    font-weight: bold;
+  }
+  #services .servicesSlider_info p {
+    margin-left: 37%;
+  }
+  #gallery h3.gallery_heading,
+  #contactsOne h3.contact_heading {
+    margin-left: 35%;
+    width: 217px;
+    height: 61px;
+    font-size: 24px;
+    font-weight: bold;
+  }
+  #reviews h3.reviews_heading {
+    margin-left: 35%;
+    width: 217px;
+    height: 61px;
+    font-size: 22px;
+    font-weight: bold;
+    padding: 5px;
+  }
+  #reviews .carousel-item .reviewsImages {
+    margin-right: -2%;
+  }
+  #reviews .reviewsInfo {
+    width: 775px;
+    height: 430px;
+    padding: 100px 216px 100px 100px;
+    margin-left: 7%;
+  }
+  #contactsOne .col-12 {
+    text-align: center;
+  }
+  #contactOne a {
+    text-align: center;
+  }
+  #contactsOne a i {
+    text-align: center;
+    margin-left: 0%;
+  }
+  #contacts {
+    height: 1200px;
+  }
+
+  #contactsTwo iframe {
+    height: 453px;
+    width: 100%;
+    margin-left: 0%;
+  }
+}
+
+/* Large (lg): 992px to 1199px */
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+  header .main-nav {
+    padding-left: 0%;
+  }
+  .changeUrself_info h3 {
+    font-size: 34px;
+  }
+  .changeUrself_info h4 {
+    font-size: 16px;
+  }
+  #forMe .forMe_info {
+    padding: 0 50px;
+  }
+  #forMe .forMe_info h3 {
+    font-size: 24px;
+    margin-left: 55%;
+  }
+  #forMe .forMe_info p {
+    text-align: right;
+    font-size: 15px;
+  }
+  #forMe .forMe_info h4 {
+    font-size: 20px;
+  }
+  #effect img {
+    margin-left: 10px;
+    width: 150px;
+  }
+  #effect .effect_dots {
+    left: 24%;
+  }
+  #effect .effect_dots .effect_dot {
+    width: 15px;
+    height: 15px;
+  }
+  #effect .effect_button {
+    left: 36%;
+    width: 120px;
+    height: 60px;
+    font-size: 24px;
+    padding: 10px 24px;
+  }
+  #effect .effect_dotsAfter {
+    right: 22%;
+  }
+  #effect .effect_dotsAfter .effect_dot {
+    width: 15px;
+    height: 15px;
+  }
+  #effect .effect_buttonAfter {
+    right: 8%;
+    width: 120px;
+    height: 60px;
+    font-size: 24px;
+    padding: 10px 24px;
+  }
+  #services .services_info p {
+    margin-left: 60px;
+  }
+  #gallery h3.gallery_heading,
+  #contactsOne h3.contact_heading {
+    margin-left: 10%;
+  }
+  #reviews .carousel-item .reviewsImages {
+    margin-right: 11%;
+  }
+  #reviews .reviewsInfo {
+    width: 755px;
+    height: 430px;
+
+    margin-left: 7%;
+  }
+  #reviews h3.reviews_heading {
+    margin-left: 9%;
+  }
+  #contactsOne a i {
+    margin-left: 0%;
+  }
+  #contactsTwo iframe {
+    height: 500px;
+  }
+}
+/* Extra Large (xl): 1200px and above  */
+@media only screen and (min-width: 1199px) and (max-width: 1399.98px) {
+  header .main-nav {
+    padding-left: 15%;
+  }
+  #effect img {
+    margin-left: 10px;
+  }
+  #effect .effect_dots {
+    left: 24%;
+  }
+  #effect .effect_button {
+    left: 34%;
+  }
+  #effect .effect_dotsAfter {
+    right: 22%;
+  }
+  #effect .effect_buttonAfter {
+    right: 8%;
+  }
+  #services .services_info p {
+    margin-left: 100px;
+  }
+  #reviews .carousel-item .reviewsImages {
+    margin-right: 0%;
+  }
+  #reviews .reviewsInfo {
+    width: 830px;
+    height: 430px;
+
+    margin-left: 13%;
+  }
+}
+
+/*macbook and above */
+@media only screen and (min-width: 1400px) and (max-width: 1440px) {
+  header .main-nav {
+    padding-left: 18%;
+  }
+  #effect img {
+    margin-left: 10px;
+  }
+  #effect .effect_dots {
+    left: 22%;
+  }
+  #effect .effect_button {
+    left: 32%;
+  }
+  #effect .effect_dotsAfter {
+    right: 24%;
+  }
+  #effect .effect_buttonAfter {
+    right: 10%;
+  }
+}
